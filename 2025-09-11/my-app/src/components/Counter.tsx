@@ -4,14 +4,14 @@ import "../App.css"
 function Counter() {
   const [count, setCount] = useState(0)
 
-  function increaseCounter(){
-    setCount(count =>count + 1)
+  function increaseCounter(amount: number){
+    setCount(count =>count + amount)
   }
   return (
     <>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={increaseCounter}>count is {count}</button>
+        <button onClick={() => increaseCounter(10)}>count is {count}</button>
       </div>
     </>
   )
