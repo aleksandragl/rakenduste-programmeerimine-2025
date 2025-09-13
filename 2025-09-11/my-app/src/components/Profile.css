@@ -1,0 +1,21 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;          /*  vh-100% of the viewports height */  
+  gap: 1rem;               
+}
+
+.profile-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-container input,
+.profile-container textarea,
+.profile-container button {
+  padding: 0.5rem;
+  width: 250px;
+}
