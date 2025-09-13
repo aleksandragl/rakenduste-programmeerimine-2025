@@ -11,7 +11,15 @@ function Counter() {
     <>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => increaseCounter(10)}>count is {count}</button>
+        <p>Count is {count}</p>
+        <button onClick={() => increaseCounter(100)}>+100</button>
+        <button onClick={() => increaseCounter(50)}>+50</button>
+        <button onClick={() => increaseCounter(25)}>+25</button>
+        <button onClick={() => increaseCounter(1)}>+1</button>
+        <button onClick={() => increaseCounter(-1)}>-1</button>
+        <button onClick={() => increaseCounter(-25)}>-25</button>
+        <button onClick={() => increaseCounter(-50)}>-50</button>
+        <button onClick={() => increaseCounter(-100)}>-100</button>
       </div>
     </>
   )
